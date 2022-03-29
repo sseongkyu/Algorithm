@@ -5,22 +5,25 @@
 
 # 해결 아이디어 : 문자열을 하나씩 확인하며 숫자는 합계, 알파벳은 리스트에 저장
 
-from unittest import result
-
-
+# 입력 및 초기값 설정
 input_data = input()
 value = 0
 result = []
 
+# 입력데이터에서 하나씩 확인하면서 result리스트에 삽임
 for i in input_data:
+    # 알파벳은 result에 삽임
     if i.isalpha():
         result.append(i)
+    # 숫자는 따로 더함
     else:
         value += int(i)
-
+# 알파벳이 들어있는 result리스트 정렬
 result.sort()
 
+# 숫자가 존재하면 result리스트에 가장 뒤에 삽입
 if value != 0:
     result.append(str(value))
 
+# 결과 출력(리스트를 문자열로 변환하여 출력)
 print(''.join(result))
