@@ -14,7 +14,7 @@
 x = int(input())
 
 # DP테이블 초기화
-d = [0] * 30001
+d = [0] * 30001  # 1일 경우 자기자신이 1이므로 0으로 설정
 
 # Dynamic Programming (보텀업)
 for i in range(2, x+1):
