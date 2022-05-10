@@ -47,7 +47,7 @@ dijkstra(start)
 
 # max distance calculation
 count = 0
-max_distance = 0
+m2ax_distance = 0
 for d in distance:
     if d != 1e9:
         count += 1
