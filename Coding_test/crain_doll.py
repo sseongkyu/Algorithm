@@ -40,5 +40,6 @@ def solution(board, moves):
         if len(basket) >= 2 and basket[-1] == basket[-2]:
             basket.pop()
             basket.pop()
+            # pop 대신 basket[-2:] = []  뒤에서 두개를 없앤다
             answer += 2
-    return print(answer)
+    return answer
